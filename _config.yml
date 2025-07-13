@@ -34,7 +34,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : https://orcid.org/0009-0002-5011-9002
+  orcid            : "https://orcid.org/0009-0002-5011-9002"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : # URL
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : abdullah-umut-hamzao%C4%9Fullar%C4%B1-17893b221
+  linkedin         : "abdullah-umut-hamzao%C4%9Fullar%C4%B1-17893b221"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -71,7 +71,7 @@ author:
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : @abdullahumuth
+  youtube          : "@abdullahumuth"
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
