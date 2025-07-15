@@ -10,6 +10,6 @@ This project implemented Lagrangian Neural Networks (LNNs) in PyTorch, combining
 
 **Key Technologies:** PyTorch, PySR, Symbolic Regression, Classical Mechanics, Physics-Informed Neural Networks
 
-**Seminar:** [*"Using Lagrangian Neural Networks to Learn Physics"*](https://www.youtube.com/watch?v=Rbu45RuJc1c&t=27s)
+**Seminar:** [*"Using Lagrangian Neural Networks to Learn Physics"*](https://www.youtube.com/watch?v=Rbu45RuJc1c)
 
 ---

@@ -40,7 +40,7 @@ The seminar demonstrated practical implementation using:
 
 ## Watch the Seminar
 
-[YouTube Recording](https://www.youtube.com/watch?v=Rbu45RuJc1c&t=27s)
+[YouTube Recording](https://www.youtube.com/watch?v=Rbu45RuJc1c)
 
 ## About the Series
 
