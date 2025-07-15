@@ -138,6 +138,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image: "/images/social-preview.png"
+logo: "/images/logo.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
