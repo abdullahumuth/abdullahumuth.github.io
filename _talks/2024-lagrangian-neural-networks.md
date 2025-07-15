@@ -8,6 +8,10 @@ date: 2024-11-24
 location: "Istanbul, Turkey"
 ---
 
+## Watch the Seminar
+
+[YouTube Recording](https://www.youtube.com/watch?v=Rbu45RuJc1c)
+
 We will study Lagrangian Neural Networks, a method that allows us to effectively "learn" the Lagrangian function, a key theoretical quantity in classical mechanics, from observed data alone. And with the help of symbolic regression, we get the underlying mathematical expressions of the Lagrangian. This seminar invites you to consider the potential of AI in deriving theoretical laws from experimental data, showing how machine learning is increasingly integral to advancing physics.
 
 ## Key Topics Covered
@@ -24,13 +28,10 @@ The seminar demonstrated practical implementation using:
 - Custom architectures that enforce physical constraints
 - Trajectory data generation and analysis
 
-## Watch the Seminar
-
-[YouTube Recording](https://www.youtube.com/watch?v=Rbu45RuJc1c)
 
 ## About the Series
 
-This seminar was the fifth of the "CMPE ÖTK Student Seminars" series, an initiative I organized as Vice Chair of the Undergraduate Student Council for CMPE. The series aims to foster knowledge sharing among undergraduate students and explore cutting-edge research topics at the intersection of computer engineering and other disciplines.
+This seminar was the fifth of the "CMPE ÖTK Student Seminars" series, an initiative I organized as Vice Chair of the Undergraduate Student Council of the Computer Engineering Department. The series aims to foster knowledge sharing among undergraduate students and explore cutting-edge research topics at the intersection of computer engineering and other disciplines.
 
 ## Related Work
 
