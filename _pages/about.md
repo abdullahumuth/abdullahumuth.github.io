@@ -1,13 +1,11 @@
 ---
 permalink: /
-title: "Abdullah Umut Hamzaoğulları"
+title: "About Me"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
-
-## About Me
 
 I am Abdullah Umut Hamzaoğulları, a fourth-year undergraduate student at Boğaziçi University in Istanbul, Turkey, pursuing a double major in Physics and Computer Engineering. My academic journey is fueled by a deep passion for advancing natural sciences, particularly theoretical physics, through the transformative power of machine learning.
 
