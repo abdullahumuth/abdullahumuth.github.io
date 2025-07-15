@@ -17,11 +17,12 @@ Senior • GPA: 3.53/4.00 (High Honors)
 Two separate diplomas in Physics and Computer Engineering.  
 Ranked 143rd among 2+ million students in national university entrance exams (YKS).
 
+<!--
 ## Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-
+-->
 ## Research Experience
 
 **Research Intern** (June 2025 – Present)  
