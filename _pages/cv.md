@@ -9,18 +9,20 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+## Education
+
 **B.Sc. in Physics and B.Sc. in Computer Engineering (Double Major)**  
 *Boğaziçi University, Istanbul, Turkey (September 2021 – June 2026 expected)*  
 Senior • GPA: 3.53/4.00 (High Honors)  
 Two separate diplomas in Physics and Computer Engineering.  
 Ranked 143rd among 2+ million students in national university entrance exams (YKS).
 
----
+## Publications
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
-Research Experience
-======
+## Research Experience
 
 **Research Intern** (June 2025 – Present)  
 *Radboud University, High Energy Physics*  
@@ -28,8 +30,6 @@ Research Experience
 *Nijmegen, Netherlands*  
 - Conducting research on foundation models for gravitational wave analysis using deep transformer-based symbolic regression.  
 - Exploring state-of-the-art methods, including Multi-Modal Symbolic Regression (MMSR), for interpretable modeling of gravitational wave signals.
-
----
 
 **Research Intern** (June 2024 – September 2024)  
 *Forschungszentrum Jülich, PGI-8*  
@@ -40,8 +40,6 @@ Research Experience
 - Collaborated with research team to enhance understanding of neural network representations of many-body quantum systems.  
 - Applied scientific machine learning, information theory, and advanced statistical techniques to quantum systems.
 
----
-
 **Project in Computer Engineering - CMPE491** (February 2025 – June 2025)  
 *Boğaziçi University*  
 *Supervisor: Asst. Prof. İnci Meliha Baytaş*  
@@ -49,8 +47,6 @@ Research Experience
 - Developed deep learning models for blackbox Hamiltonian learning from minimal quantum measurement data.  
 - Focused on predicting both system dimension and Hamiltonian parameters jointly using multi-output neural networks, as well as 1D CNNs, RNNs, Transformers.  
 - Simulated open quantum systems via Julia and QuantumOptics.jl for dataset generation.
-
----
 
 **Undergraduate Research - PHYS492** (February 2024 – June 2024)  
 *Boğaziçi University*  
@@ -60,18 +56,18 @@ Research Experience
 - Developed tool using symbolic regression (PySR) to infer mathematical form of Lagrangian from trajectory data.  
 - Explored theoretical concepts including Noether's theorem and symplectic integrators.
 
----
+## Talks
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
+  {% endfor %}</ul>
 
-Academic Programs & Workshops
-======
+## Academic Programs & Workshops
 
 **International Winter School** (February 2025)  
 *TÜBİTAK TBAE, Gebze, Turkey*  
 - Gravitation, Cosmology and Mathematical Physics.  
 - Intensive lectures on differential geometry, general relativity, and cosmology.  
 - Enhanced understanding of advanced gravitational theories and contemporary research challenges.
-
----
 
 **Summer Training Program** (July 2023 – September 2023)  
 *Boğaziçi University, Geophysics and Machine Learning*  
@@ -80,10 +76,7 @@ Academic Programs & Workshops
 - Applied deep learning techniques to earthquake data analysis and predictive modeling.  
 - Focused on algorithm development and geophysics methodologies.
 
----
-
-Leadership & Academic Initiatives
-======
+## Leadership & Academic Initiatives
 
 **Vice Chair of the Undergraduate Student Council for CMPE** (December 2023 – December 2024)  
 *Department of Computer Engineering, Boğaziçi University*  
@@ -92,19 +85,13 @@ Leadership & Academic Initiatives
 - Improved student-faculty communication through structured processes.  
 - Led environmental initiatives including seasonal observation stations and rare flora labeling.
 
----
+## Technical Skills
 
-Technical Skills
-======
+**Programming Languages:** Python, Julia, Java, C  
+**Machine Learning Frameworks:** TensorFlow, PyTorch, Flux (Julia)  
+**Tools & Technologies:** Git, LaTeX, Jupyter, Linux  
 
-- **Programming Languages:** Python, Julia, Java, C  
-- **Machine Learning Frameworks:** TensorFlow, PyTorch, Flux (Julia)  
-- **Tools & Technologies:** Git, LaTeX, Jupyter, Linux  
-
----
-
-Relevant Coursework
-======
+## Relevant Coursework
 
 **CMPE598 - Quantum Algorithms**  
 *Instructor: Prof. Cem Say*  
@@ -112,10 +99,7 @@ Relevant Coursework
 - Quantum cryptography and BB84 protocol.  
 - Quantum circuits and automata theory.
 
----
-
-Scholarships
-======
+## Scholarships
 
 **TÜBİTAK 2224-D** (€600/month, June–September 2025)  
 Grant for participation in scientific activities abroad.
@@ -135,10 +119,7 @@ National science grant awarded for excellence in the sciences.
 **Turkish Education Association Full Scholarship** (2014–Present)  
 Complete education coverage from secondary school through university.
 
----
-
-Teaching Experience
-======
+## Teaching Experience
 
 **Digital Systems** — Hardware Laboratory Assistant (Spring 2022)  
 *Instructor: Prof. Alper Şen*
@@ -146,39 +127,21 @@ Teaching Experience
 **Principles of Embedded Systems Design** — Laboratory Organization (Fall 2021)  
 *Instructor: Prof. Arda Yurdakul*
 
----
-
-Certifications
-======
+## Certifications
 
 - [Deep Learning Specialization — deeplearning.ai](https://www.coursera.org/account/accomplishments/specialization/certificate/AHES33B42BXX)  
 - [TensorFlow Specialization — deeplearning.ai](https://www.coursera.org/account/accomplishments/specialization/certificate/W36VU3W47N6C)
 
----
+## Languages
 
-Languages
-======
+**Turkish:** Native  
+**English:** Fluent  
+**Spanish:** Beginner  
+**German:** Beginner  
 
-- **Turkish:** Native  
-- **English:** Fluent  
-- **Spanish:** Beginner  
-- **German:** Beginner  
-
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
+<!--
+## Teaching
+ <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+-->
