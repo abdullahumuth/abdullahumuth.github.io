@@ -11,7 +11,8 @@ locale                   : "en-UK"
 title                    : "Abdullah Umut's Personal Website"
 title_separator          : "-"
 name                     : &name "Abdullah Umut Hamzaoğulları"
-description              : &description "personal description"
+description              : &description "Senior undergraduate double major student in physics and computer engineering, working on AI for theoretical physics."
+keywords                : "abdullah umut, abdullahumuth, abdullahumuth.github.io, abdullahumuth.github.io, abdullah umut hamzaoğulları, abdullah umut hamzaogullari, abdullah umut hamzaogullari github, abdullah umut hamzaogullari website, abdullah umut hamzaogullari personal website, abdullah umut hamzaogullari personal page, boun, boğaziçi university, boun physics, boun computer engineering, physics and computer engineering, double major, AI for theoretical physics, machine learning in physics, AI for science, AI for scientific discovery"
 url                      : https://abdullahumuth.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "abdullahumuth/abdullahumuth.github.io"
@@ -136,7 +137,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image: "/images/social-preview.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
