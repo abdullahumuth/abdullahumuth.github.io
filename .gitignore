@@ -12,3 +12,4 @@ Gemfile.lock
 node_modules
 package-lock.json
 .github/    workflows  /scrape_talks.yml
+.github/    workflows  /scrape_talks.yml
