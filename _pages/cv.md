@@ -9,7 +9,6 @@ redirect_from:
 
 {% include base_path %}
 <a href="/files/cv.pdf" target="_blank">📄 Download as PDF/a>
-
 ## Education
 
 **B.Sc. in Physics and B.Sc. in Computer Engineering (Double Major)**  
