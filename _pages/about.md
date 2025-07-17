@@ -15,6 +15,8 @@ redirect_from:
 
 I am Abdullah Umut Hamzaoğulları, a senior undergraduate student at Boğaziçi University in Istanbul, Turkey, pursuing a double major in Physics and Computer Engineering. I am interested in natural sciences in general. I believe that we can accelerate scientific progress with the currently emerging machine learning methods. So, I am working on AI for scientific discovery, particularly in theoretical physics.
 
+More extensively, my interests would include physical philosophy, neuroscience, genetic, mathematics, and of course, computer science. Some of my hobbies are riding bicycles, astrophotography, experimenting with tea brewing, listening to classical music, and Better Call Saul.
+
 ## Research Vision
 
 My end quest is to create a tool that will be theoretical scientists' best friend: analyze natural science data and come up with ways to represent it mathematically, and consistently. As experiments grow more complex, interpreting data becomes increasingly difficult. AI, one of the 21st century's most powerful tools, can assist in recognizing patterns beyond human capability and help us advance our scientific discovery process.
