@@ -37,5 +37,5 @@ export const template = {
 export const seo = {
 	default_title: 'Abdullah Umut Hamzaoğulları | Personal Website',
 	default_description: 'I am a senior undergraduate double major student in physics and computer engineering, working on AI for theoretical physics.',
-	default_image: '/images/social-preview.png',
+	default_image: '/social-preview.png',
 }
