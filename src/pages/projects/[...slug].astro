@@ -1,0 +1,61 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+type Props = {
+  project: CollectionEntry<'projects'>;
+};
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+---
+
+<Layout title={project.data.title}>
+  <div class="prose max-w-none">
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-4">{project.data.title}</h1>
+      
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class={`badge ${project.data.status === 'Completed' ? 'badge-info' : 'badge-warning'}`}>
+          {project.data.status}
+        </span>
+        <span class="badge badge-outline">{new Date(project.data.date).toLocaleDateString()}</span>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">Technologies:</h3>
+        <div class="flex flex-wrap gap-2">
+          {project.data.technologies.map((tech) => (
+            <span class="badge badge-secondary">{tech}</span>
+          ))}
+        </div>
+      </div>
+
+      {project.data.image && (
+        <img 
+          src={project.data.image} 
+          alt={project.data.title}
+          class="w-full max-w-2xl mx-auto rounded-lg shadow-lg mb-6"
+        />
+      )}
+    </div>
+
+    <div class="prose prose-lg">
+      <Content />
+    </div>
+
+    <div class="mt-8">
+      <a href="/research" class="btn btn-outline">
+        ← Back to Research
+      </a>
+    </div>
+  </div>
+</Layout>

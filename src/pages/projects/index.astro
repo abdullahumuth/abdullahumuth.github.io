@@ -1,0 +1,56 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+const sortedProjects = projects.sort((a, b) => 
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<Layout title="Projects">
+  <div class="prose max-w-none">
+    <h1 class="text-3xl font-bold mb-8">Research Projects</h1>
+    
+    <div class="grid gap-6">
+      {sortedProjects.map((project) => (
+        <article class="card bg-base-200 transition-all hover:shadow-lg">
+          <div class="card-body">
+            <div class="flex justify-between items-start mb-4">
+              <h2 class="card-title text-xl">
+                <a href={`/projects/${project.slug}`} class="hover:text-accent">
+                  {project.data.title}
+                </a>
+              </h2>
+              <span class={`badge ${project.data.status === 'Completed' ? 'badge-success' : 'badge-warning'}`}>
+                {project.data.status}
+              </span>
+            </div>
+            
+            <p class="text-base-content/80 mb-4">{project.data.excerpt}</p>
+            
+            <div class="mb-4">
+              <div class="flex flex-wrap gap-2">
+                {project.data.technologies.map((tech) => (
+                  <span class="badge badge-outline badge-sm">{tech}</span>
+                ))}
+              </div>
+            </div>
+            
+            <div class="card-actions justify-between items-center">
+              <span class="text-sm text-base-content/60">
+                {new Date(project.data.date).toLocaleDateString()}
+              </span>
+              <a
+                href={`/projects/${project.slug}`}
+                class="btn btn-sm btn-secondary text-secondary-content"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</Layout>

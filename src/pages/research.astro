@@ -4,66 +4,73 @@ import { profile } from "@/settings";
 import BetterIcon from "@/components/ui/BetterIcon.astro";
 import List from "@/components/ui/List.astro";
 import {RESEARCH_ICONS} from "@/data/researchIcons";
+import { getCollection } from 'astro:content';
 
 const { research_areas } = profile;
+
+// Get projects from the projects collection (lowercase)
+const projectEntries = await getCollection("projects");
+const projects = projectEntries
+  .map(project => ({
+    title: project.data.title,
+    description: project.data.excerpt,
+    slug: `/projects/${project.slug}`,
+    status: project.data.status,
+    date: project.data.date
+  }))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---
 
-<Layout title="Research | Dr. Marie Curie">
+<Layout title="Research">
   <div class="prose max-w-none">
-    <h1 class="text-3xl font-bold mb-8">Research Statement</h1>
+    <h1 class="text-3xl font-bold mb-8">Research Vision</h1>
 
     <div class="mb-12">
       <p class="text-lg mb-6">
-        My research focuses on groundbreaking investigations into radioactivity and the discovery of new radioactive elements. Through meticulous experimental techniques and innovative methodologies, I aim to advance our understanding of radioactive phenomena and their applications in both physics and chemistry.
+        My end quest is to create a tool that will be theoretical scientists' best friend: analyze natural science data and come up with ways to represent it mathematically, and consistently. As experiments grow more complex, interpreting data becomes increasingly difficult. AI, one of the 21st century's most powerful tools, can assist in recognizing patterns beyond human capability and help us advance our scientific discovery process.
       </p>
       <p class="text-lg mb-6">
-        This interdisciplinary approach has led to significant discoveries, including the isolation of polonium and radium, contributing to the foundation of modern nuclear physics and radiochemistry.
+        What I want to focus on is the recently emerging field of delving into more of the mathematical side, creating theoretical structures with the help of artificial intelligence, thereby getting humanity closer to fundamental theories.
       </p>
+
+      <p class="text-lg mb-6">
+        I believe that as scientists, we have a responsibility to choose how we spend our time for projects that help people and make the world better, not harm it. Human wellbeing should always come first in our work.
+      </p>
+
     </div>
 
-    <h2 class="text-2xl font-bold mb-6">Research Areas</h2>
-    <div class="grid gap-8 mb-12">
+    <!-- Projects Section -->
+    <h2 class="text-2xl font-bold mb-6">Research Projects</h2>
+    <div class='grid md:grid-cols-2 gap-4 mb-12'>
       {
-        research_areas.map((area) => (
-          <div class="flex gap-6 items-start">
-            <BetterIcon>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke-width="2"
-                class="size-6 stroke-accent"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d={RESEARCH_ICONS[area.field as keyof typeof RESEARCH_ICONS]?.path || RESEARCH_ICONS['computer-science'].path}
-                />
-              </svg>
-            </BetterIcon>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">{area.title}</h3>
-              <p class="text-base">{area.description}</p>
+        projects.map(project => (
+          <article class='card bg-base-200 transition-all hover:shadow-lg'>
+            <div class='card-body p-4'>
+              <div class='flex justify-between items-start mb-2'>
+                <h3 class='card-title text-lg'>
+                  <a href={project.slug} class='hover:text-accent'>
+                    {project.title}
+                  </a>
+                </h3>
+                <span class={`badge ${project.status === 'Completed' ? 'badge-info' : 'badge-warning'}`}>
+                  {project.status}
+                </span>
+              </div>
+              <p class='text-base-content/80 text-sm mb-3 line-clamp-2'>{project.description}</p>
+              <div class='card-actions justify-end'>
+                <a
+                  href={project.slug}
+                  class='btn btn-xs btn-outline'
+                >
+                  Learn More
+                </a>
+              </div>
             </div>
-          </div>
+          </article>
         ))
       }
     </div>
 
-    <List listTitle="Current Projects" listItems={[
-      {
-        title: "Radioactivity Studies",
-        description: "Investigation of radioactive properties in uranium minerals and isolation of new radioactive elements."
-      },
-      {
-        title: "Measurement Techniques",
-        description: "Development of precise methods for measuring radioactive emissions and their properties."
-      }
-    ]} />
 
-    <h2 class="text-2xl font-bold mb-6">Research Impact</h2>
-    <p class="text-lg mb-6">
-      My research has opened new frontiers in radioactivity studies, leading to practical applications in both scientific research and medical treatments. The discoveries have revolutionized our understanding of atomic structure and radioactive decay processes.
-    </p>
   </div>
 </Layout>

@@ -1,23 +1,26 @@
 export const profile = {
-	fullName: 'Your Name',
-	title: '',
-	institute: '',
-	author_name: '', // Author name to be highlighted in the papers section
+	fullName: 'Abdullah Umut Hamzaoğulları',
+	title: 'senior computer engineering & physics double major student',
+	institute: 'Boğaziçi University, Istanbul',
+	author_name: 'Abdullah Umut Hamzaoğulları', // Author name to be highlighted in the papers section
 	research_areas: [
-		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
+		{ title: 'AI for Scientific Discovery', description: 'Using machine learning to accelerate scientific progress, particularly in theoretical physics', field: 'physics' },
+		{ title: 'Theoretical & Computational Physics', description: 'Foundations of physics, quantum algorithms, relativity', field: 'physics' },
+		{ title: 'Deep Learning & Symbolic AI', description: 'Transformer architectures, representation learning, and symbolic regression for interpretable models', field: 'cs' },
+		{ title: 'Physics-Informed Machine Learning', description: 'Incorporating physical laws and symmetries into neural network architectures', field: 'physics' },
 	],
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: '',
-	linkedin: '',
-	x: 'https://www.x.com/',
-	github: '',
+	email: 'abdullahumuth@gmail.com',
+	linkedin: 'https://www.linkedin.com/in/abdullah-umut-hamzao%C4%9Fullar%C4%B1-17893b221',
+	x: 'https://x.com/abdullahumuth',
+	github: 'https://github.com/abdullahumuth',
 	gitlab: '',
 	scholar: '',
 	inspire: '',
-	arxiv: '',
+	arxiv: 'https://arxiv.org/a/abdullahumuth.htm',
 }
 
 export const template = {
@@ -32,7 +35,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
-	default_image: '/images/astro-academia.png',
+	default_title: 'Abdullah Umut Hamzaoğulları | Personal Website',
+	default_description: 'I am a senior undergraduate double major student in physics and computer engineering, working on AI for theoretical physics.',
+	default_image: '/images/social-preview.png',
 }

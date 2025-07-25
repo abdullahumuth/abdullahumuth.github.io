@@ -14,6 +14,21 @@ export interface Education {
   description?: string;
 }
 
+export interface Workshop {
+  title: string;
+  organizer: string;
+  time: string;
+  location?: string;
+  description?: string;
+}
+
+export interface Scholarship {
+  name: string;
+  amount: string;
+  period: string;
+  description?: string;
+}
+
 export interface Skill {
   title: string;
   description: string;
@@ -28,18 +43,27 @@ export interface Publication {
   abstract?: string;
 }
 
-export function isExperience(element: Experience | Education): element is Experience {
+// Type guards
+export function isExperience(element: any): element is Experience {
   return 'title' in element && 'company' in element;
 }
 
-export function isEducation(element: Education | Experience): element is Education {
+export function isEducation(element: any): element is Education {
   return 'school' in element && 'degree' in element;
 }
 
-export function isSkill(element: Skill | Publication): element is Skill {
-  return 'description' in element;
+export function isWorkshop(element: any): element is Workshop {
+  return 'title' in element && 'organizer' in element;
 }
 
-export function isPublication(element: Skill | Publication): element is Publication {
-  return 'authors' in element;
+export function isScholarship(element: any): element is Scholarship {
+  return 'name' in element && 'amount' in element && 'period' in element;
+}
+
+export function isSkill(element: any): element is Skill {
+  return 'title' in element && 'description' in element && !('authors' in element) && !('organizer' in element);
+}
+
+export function isPublication(element: any): element is Publication {
+  return 'authors' in element && 'journal' in element;
 }
