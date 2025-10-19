@@ -1,31 +1,72 @@
 export const research = [
 	{
-		company: 'Radboud University',
-		time: 'June 2025 – Present',
-		title: 'Research Intern - High Energy Physics',
+		company: 'Radboud University, High Energy Physics',
+		time: 'June 2025 – September 2025',
+		title: 'Research Intern',
 		location: 'Nijmegen, Netherlands',
-		description: 'Developing transformer-based symbolic regression models for gravitational wave analysis.',
+		description: [
+			'Researched multi-task symbolic regression methods for analyzing gravitational waves to discover physical laws from data.',
+			'Designed a transformer model using contrastive learning to estimate the likelihood of observed (x, y) data under candidate mathematical expressions.',
+			'Explored state-of-the-art deep symbolic regression models, including Multi-Modal Symbolic Regression (MMSR), for interpretable modeling of gravitational wave signals.'
+		],
 	},
 	{
 		company: 'Forschungszentrum Jülich, PGI-8',
 		time: 'June 2024 – September 2024',
 		title: 'Research Intern',
 		location: 'Regensburg, Germany',
-		description: 'Applied transformers to predict quantum many-body wave function complexity using mutual information.',
+		description: [
+			'Investigated mutual information as a proxy to predict the difficulty of learning wave functions using Neural Quantum States (NQS) in quantum many-body systems with transformers.',
+			'Designed and implemented transformer architectures in Julia to estimate entropy and conditional entropy in discrete and continuous quantum systems.',
+			'Collaborated with the research team to enhance understanding of neural network representations of many-body quantum systems.',
+			'Applied scientific machine learning, information theory, and advanced statistical techniques to quantum systems.'
+		],
 	},
 	{
 		company: 'Boğaziçi University',
+		time: 'September 2025 – Present',
+		title: "Bachelor's Thesis (Supervisors: Asst. Prof. İnci Meliha Baytaş & Asst. Prof. Arkadaş Özakin)",
+		location: 'Istanbul, Turkey',
+		description: [
+			'Developing an improved Constrained Lagrangian Neural Network (CLNN) model with automated constraint learning.',
+			'Designing a hybrid loss combining outputs from two specialized networks—one modeling Lagrangian dynamics and another learning system constraints.'
+		],
+	},
+	{
+		company: 'Boğaziçi University, Department of Computer Engineering',
 		time: 'February 2025 – June 2025',
-		title: 'Project in Computer Engineering - CMPE491',
+		title: 'Undergraduate Research',
 		location: 'Istanbul, Turkey',
-		description: 'Developed deep learning models for blackbox Hamiltonian learning from minimal quantum measurements.',
+		description: [
+			'Developed deep learning models for blackbox Hamiltonian learning from minimal quantum measurement data.',
+			'Focused on predicting both system dimension and Hamiltonian parameters jointly using multi-output neural networks, 1D CNNs, RNNs, and Transformers.',
+			'Simulated open quantum systems via Julia and QuantumOptics.jl for dataset generation.'
+		],
 	},
 	{
-		company: 'Boğaziçi University',
+		company: 'Boğaziçi University, Department of Physics',
 		time: 'February 2024 – June 2024',
-		title: 'Undergraduate Research - PHYS492',
+		title: 'Undergraduate Research',
 		location: 'Istanbul, Turkey',
-		description: 'Implemented Lagrangian Neural Networks and symbolic regression tools for physics-informed ML.',
+		description: [
+			'Implemented Lagrangian Neural Networks (LNNs) in PyTorch.',
+			'Developed a tool using symbolic regression (PySR) to infer the mathematical form of the Lagrangian from trajectory data.',
+			'Explored theoretical concepts including Noether’s theorem and symplectic integrators.'
+		],
+	},
+];
+
+export const work = [
+	{
+		company: 'EMLTechs, ExportAI Project',
+		time: 'September 2025 – Present',
+		title: 'AI Engineer (Part-time)',
+		location: 'Istanbul, Turkey',
+		description: [
+			'Developing AI systems for automating regulatory compliance in product exports (e.g., cosmetics) using Retrieval-Augmented Generation (RAG) and agentic pipelines.',
+			'Leading computer vision efforts, researching and implementing CNN- and transformer-based models (YOLO, Vision Transformers) for symbol detection and OCR tasks on product packaging.',
+			'Contributing to full-stack product development and model deployment within a small, interdisciplinary engineering team.'
+		],
 	},
 ];
 
@@ -99,7 +140,7 @@ export const skills = [
 	},
 	{
 		title: 'Quantum Computing',
-		description: 'Deutsch-Jozsa, Shor\'s, Grover\'s algorithms, Quantum cryptography (BB84)',
+		description: "Deutsch-Jozsa, Shor's, Grover's algorithms, Quantum cryptography (BB84)",
 	},
 	{
 		title: 'Certifications',
@@ -107,9 +148,7 @@ export const skills = [
 	},
 ];
 
-export const publications = [
-	// Currently no publications listed in the CV
-];
+export const publications = [];
 
 export const scholarships = [
 	{
