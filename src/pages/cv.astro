@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { research, extracurricular, workshops, education, skills, publications, scholarships } from '../data/cv'
+import { research, extracurricular, workshops, education, skills, publications, scholarships, work } from '../data/cv'
 import CvTimeline from '@/components/ui/CvTimeline.astro'
 
 import type { Experience, Education, Publication, Workshop, Scholarship } from '../types/cv'
@@ -8,6 +8,7 @@ import List from '@/components/ui/List.astro'
 import PublicationsList from '@/components/ui/PublicationsList.astro'
 
 let orderedResearch: Experience[] = []
+let orderedWork: Experience[] = []
 let orderedExtracurricular: Experience[] = []
 let orderedWorkshops: Workshop[] = []
 let orderedEducations: Education[] = []
@@ -16,62 +17,30 @@ let orderedScholarships: Scholarship[] = []
 
 const orderElement = <T extends { time: string }>(a: T, b: T) => {
   const presentValues = ['present', 'now', 'current', 'today']
-  if (
-			presentValues.includes(
-				(a['time'] as string)?.split(' - ')[1]?.toLowerCase()
-			)
-		) {
-			// If the date is 'present', it should be the first element
-			return -1
-		}
-		const dateA = new Date((a['time'] as string)?.split(' - ')[1])
-		const dateB = new Date((b['time'] as string)?.split(' - ')[1])
-		return dateB.getTime() - dateA.getTime()
+  const endA = (a['time'] as string)?.split(' - ')[1]?.toLowerCase()
+  const endB = (b['time'] as string)?.split(' - ')[1]?.toLowerCase()
+  if (presentValues.includes(endA)) return -1
+  if (presentValues.includes(endB)) return 1
+  const dateA = new Date((a['time'] as string)?.split(' - ')[1])
+  const dateB = new Date((b['time'] as string)?.split(' - ')[1])
+  return dateB.getTime() - dateA.getTime()
 }
 
-if (research.length > 0) {
-	orderedResearch = research.sort((a, b) => {
-		return orderElement(a, b)
-	})
-}
-
-if (extracurricular.length > 0) {
-	orderedExtracurricular = extracurricular.sort((a, b) => {
-		return orderElement(a, b)
-	})
-}
-
-if (workshops.length > 0) {
-	orderedWorkshops = workshops.sort((a, b) => {
-		return orderElement(a, b)
-	})
-}
-
-if (education.length > 0) {
-	orderedEducations = education.sort((a, b) => {
-		return orderElement(a, b)
-	})
-}
-
-if (publications.length > 0) {
-	orderedPublications = publications.sort((a, b) => {
-		return orderElement(a, b)
-	})
-}
+if (research.length > 0) orderedResearch = research.sort(orderElement)
+if (work.length > 0) orderedWork = work.sort(orderElement)
+if (extracurricular.length > 0) orderedExtracurricular = extracurricular.sort(orderElement)
+if (workshops.length > 0) orderedWorkshops = workshops.sort(orderElement)
+if (education.length > 0) orderedEducations = education.sort(orderElement)
+if (publications.length > 0) orderedPublications = publications.sort(orderElement)
 
 if (scholarships.length > 0) {
-	orderedScholarships = scholarships.sort((a, b) => {
-		const orderElementScholarship = (a: Scholarship, b: Scholarship) => {
-			const presentValues = ['present', 'now', 'current', 'today']
-			if (presentValues.includes(a.period?.split('–')[1]?.toLowerCase().trim())) {
-				return -1
-			}
-			const yearA = parseInt(a.period?.split('–')[1]?.trim() || '0')
-			const yearB = parseInt(b.period?.split('–')[1]?.trim() || '0')
-			return yearB - yearA
-		}
-		return orderElementScholarship(a, b)
-	})
+  orderedScholarships = scholarships.sort((a, b) => {
+    const presentValues = ['present', 'now', 'current', 'today']
+    if (presentValues.includes(a.period?.split('–')[1]?.toLowerCase().trim())) return -1
+    const yearA = parseInt(a.period?.split('–')[1]?.trim() || '0')
+    const yearB = parseInt(b.period?.split('–')[1]?.trim() || '0')
+    return yearB - yearA
+  })
 }
 ---
 
@@ -94,6 +63,17 @@ if (scholarships.length > 0) {
 					Research Experience
 				</h2>
 				<CvTimeline elements={orderedResearch} colored={true} />
+			</section>
+		)
+	}
+
+	{
+		orderedWork.length > 0 && (
+			<section class='mb-12'>
+				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
+					Work Experience
+				</h2>
+				<CvTimeline elements={orderedWork} colored={true} />
 			</section>
 		)
 	}
