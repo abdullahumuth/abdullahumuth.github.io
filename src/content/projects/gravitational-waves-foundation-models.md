@@ -1,32 +1,35 @@
 ---
-title: "Deep Symbolic Regression in Gravitational Wave Foundation Models"
-excerpt: "Research on deep transformer-based symbolic regression for interpretable modeling of gravitational wave signals"
-date: "2025-06-01"
-status: "Ongoing"
-technologies: ["Deep Learning", "Transformers", "Symbolic Regression", "Python", "Gravitational Wave Analysis"]
+title: "Multi-Task Symbolic Regression for Gravitational Wave Law Discovery"
+excerpt: "Developed transformer-based symbolic regression models using contrastive learning to uncover physical laws from gravitational wave data."
+date: "2025-06-26"
+status: "Completed"
+technologies: ["Deep Learning", "Transformers", "Symbolic Regression", "Contrastive Learning", "Python", "Gravitational Wave Analysis"]
 ---
 
-This project is conducted as a research internship at Radboud University in the High Energy Physics group under the supervision of Prof. Sascha Caron, Nijmegen, Netherlands, from June 2025 to the present.
+This project was conducted as a research internship at **Radboud University**, in the **High Energy Physics group** under the supervision of **Prof. Sascha Caron**, Nijmegen, Netherlands, from **June 2025 to September 2025**.
 
-
+---
 
 ## Project Overview
 
-This project focuses on conducting research on foundation models for gravitational wave analysis using deep transformer-based symbolic regression. I am exploring state-of-the-art methods, including Multi-Modal Symbolic Regression (MMSR), for interpretable modeling of gravitational wave signals. 
+This research explored **multi-task symbolic regression** using **transformer architectures** to uncover interpretable physical relations in gravitational wave data.  
+The approach leveraged **contrastive learning** to evaluate the likelihood of observed $(x, y)$ data under candidate symbolic expressions, aiming to bridge the gap between deep learning and analytical modeling in gravitational wave physics.
 
-The work combines advanced machine learning techniques with theoretical physics to develop better methods for analyzing gravitational wave data from detectors like LIGO and Virgo.
+---
 
 ## Research Goals
 
-- Develop foundation models capable of analyzing complex gravitational wave signals
-- Implement transformer-based symbolic regression for interpretable results
-- Create models that can discover underlying mathematical relationships in gravitational wave data
-- Advance the field of AI for scientific discovery in theoretical physics
+- Design transformer-based models capable of discovering mathematical laws from noisy astrophysical data  
+- Integrate symbolic regression and contrastive learning for interpretable physical inference  
+- Evaluate model performance on simulated gravitational wave datasets from detectors such as **LIGO** and **Virgo**  
+- Advance methods for **AI-driven theory discovery** in high-energy physics  
+
+---
 
 ## Key Technologies
 
-- **Deep Learning**: Advanced neural network architectures
-- **Transformers**: State-of-the-art attention mechanisms for sequence modeling
-- **Symbolic Regression**: Discovering mathematical expressions from data
-- **Python**: Primary programming language for implementation
-- **Gravitational Wave Analysis**: Domain-specific signal processing techniques
+- **Transformers**: Sequence modeling for symbolic expression generation  
+- **Contrastive Learning**: Similarity-based training for expression likelihood estimation  
+- **Symbolic Regression**: Interpretable model discovery via expression trees  
+- **Python**: Implementation and experimentation environment  
+- **Gravitational Wave Analysis**: Data preprocessing and simulation for physical signal modeling  
