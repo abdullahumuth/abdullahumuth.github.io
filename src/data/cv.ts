@@ -5,9 +5,7 @@ export const research = [
 		title: 'Research Intern',
 		location: 'Nijmegen, Netherlands',
 		description: [
-			'Researched multi-task symbolic regression methods for analyzing gravitational waves to discover physical laws from data.',
-			'Designed a transformer model using contrastive learning to estimate the likelihood of observed (x, y) data under candidate mathematical expressions.',
-			'Explored state-of-the-art deep symbolic regression models, including Multi-Modal Symbolic Regression (MMSR), for interpretable modeling of gravitational wave signals.'
+			'Developed multi-task symbolic regression models and contrastive transformers for discovering physical laws from gravitational wave data.'
 		],
 	},
 	{
@@ -16,10 +14,7 @@ export const research = [
 		title: 'Research Intern',
 		location: 'Regensburg, Germany',
 		description: [
-			'Investigated mutual information as a proxy to predict the difficulty of learning wave functions using Neural Quantum States (NQS) in quantum many-body systems with transformers.',
-			'Designed and implemented transformer architectures in Julia to estimate entropy and conditional entropy in discrete and continuous quantum systems.',
-			'Collaborated with the research team to enhance understanding of neural network representations of many-body quantum systems.',
-			'Applied scientific machine learning, information theory, and advanced statistical techniques to quantum systems.'
+			'Studied mutual information as a predictor of Neural Quantum State learnability using transformer models for entropy estimation.'
 		],
 	},
 	{
@@ -28,8 +23,7 @@ export const research = [
 		title: "Bachelor's Thesis (Supervisors: Asst. Prof. İnci Meliha Baytaş & Asst. Prof. Arkadaş Özakin)",
 		location: 'Istanbul, Turkey',
 		description: [
-			'Developing an improved Constrained Lagrangian Neural Network (CLNN) model with automated constraint learning.',
-			'Designing a hybrid loss combining outputs from two specialized networks—one modeling Lagrangian dynamics and another learning system constraints.'
+			'Designing a Constrained Lagrangian Neural Network with automated constraint discovery through hybrid loss optimization.'
 		],
 	},
 	{
@@ -38,9 +32,7 @@ export const research = [
 		title: 'Undergraduate Research',
 		location: 'Istanbul, Turkey',
 		description: [
-			'Developed deep learning models for blackbox Hamiltonian learning from minimal quantum measurement data.',
-			'Focused on predicting both system dimension and Hamiltonian parameters jointly using multi-output neural networks, 1D CNNs, RNNs, and Transformers.',
-			'Simulated open quantum systems via Julia and QuantumOptics.jl for dataset generation.'
+			'Developed neural architectures for blackbox Hamiltonian learning from minimal quantum measurements.'
 		],
 	},
 	{
@@ -49,9 +41,7 @@ export const research = [
 		title: 'Undergraduate Research',
 		location: 'Istanbul, Turkey',
 		description: [
-			'Implemented Lagrangian Neural Networks (LNNs) in PyTorch.',
-			'Developed a tool using symbolic regression (PySR) to infer the mathematical form of the Lagrangian from trajectory data.',
-			'Explored theoretical concepts including Noether’s theorem and symplectic integrators.'
+			'Implemented Lagrangian Neural Networks and used symbolic regression to recover analytical Lagrangians from data.'
 		],
 	},
 ];
@@ -63,9 +53,7 @@ export const work = [
 		title: 'AI Engineer (Part-time)',
 		location: 'Istanbul, Turkey',
 		description: [
-			'Developing AI systems for automating regulatory compliance in product exports (e.g., cosmetics) using Retrieval-Augmented Generation (RAG) and agentic pipelines.',
-			'Leading computer vision efforts, researching and implementing CNN- and transformer-based models (YOLO, Vision Transformers) for symbol detection and OCR tasks on product packaging.',
-			'Contributing to full-stack product development and model deployment within a small, interdisciplinary engineering team.'
+			'Building AI systems with RAG and vision transformers for automated export compliance and symbol recognition on packaging.'
 		],
 	},
 ];
@@ -76,21 +64,21 @@ export const extracurricular = [
 		time: 'December 2023 – December 2024',
 		title: 'Vice Chair of the Undergraduate Student Council',
 		location: 'Istanbul, Turkey',
-		description: 'Organized weekly seminars and led environmental initiatives on campus.',
+		description: 'Led student initiatives and organized academic and environmental events.',
 	},
 	{
 		company: 'Boğaziçi University',
 		time: 'Spring 2022',
 		title: 'Teaching Assistant - Digital Systems',
 		location: 'Istanbul, Turkey',
-		description: 'Hardware Laboratory Assistant for Prof. Alper Şen.',
+		description: 'Assisted Prof. Alper Şen in digital systems hardware labs.',
 	},
 	{
 		company: 'Boğaziçi University',
 		time: 'Fall 2021',
 		title: 'Teaching Assistant - Principles of Embedded Systems Design',
 		location: 'Istanbul, Turkey',
-		description: 'Laboratory Organization for Prof. Arda Yurdakul.',
+		description: 'Organized and supervised embedded systems laboratory sessions.',
 	},
 ];
 
@@ -100,14 +88,14 @@ export const workshops = [
 		organizer: 'TÜBİTAK TBAE',
 		time: 'February 2025',
 		location: 'Gebze, Turkey',
-		description: 'Intensive lectures on differential geometry, general relativity, and cosmology.',
+		description: 'Attended advanced lectures on differential geometry and cosmology.',
 	},
 	{
 		title: 'Summer Training Program - Geophysics and Machine Learning',
 		organizer: 'Boğaziçi University',
 		time: 'July 2023 – September 2023',
 		location: 'Istanbul, Turkey',
-		description: 'Applied deep learning to earthquake data analysis and predictive modeling.',
+		description: 'Applied deep learning methods to earthquake prediction tasks.',
 	},
 ];
 
@@ -117,7 +105,7 @@ export const education = [
 		time: 'September 2021 – June 2026 (expected)',
 		degree: 'B.Sc. in Physics and Computer Engineering (Double Major)',
 		location: 'Istanbul, Turkey',
-		description: 'GPA: 3.53/4.00. Ranked 143rd among 2M+ students in national university entry exams.',
+		description: 'GPA: 3.53/4.00; ranked 143rd among 2M+ students in national exams.',
 	},
 ];
 
@@ -155,36 +143,36 @@ export const scholarships = [
 		name: 'TÜBİTAK 2224-D',
 		amount: '€600/month',
 		period: 'June–September 2025',
-		description: 'Grant for international scientific activities.',
+		description: 'Grant for international scientific research participation.',
 	},
 	{
 		name: 'Erasmus+ Internship Scholarship',
 		amount: '€1000/month',
 		period: 'June–September 2025',
-		description: 'Research internship funding at Radboud University.',
+		description: 'Supported research internship at Radboud University.',
 	},
 	{
 		name: 'Erasmus+ Internship Scholarship',
 		amount: '€1000/month',
 		period: 'June–September 2024',
-		description: 'Research internship funding at Forschungszentrum Jülich.',
+		description: 'Supported research internship at Forschungszentrum Jülich.',
 	},
 	{
 		name: 'Cahit Arf Scholarship',
 		amount: '$3000/year',
 		period: '2023–2025',
-		description: 'Top 100 national exam performance award (22nd in language track).',
+		description: 'Awarded for top 100 national exam performance.',
 	},
 	{
 		name: 'TÜBİTAK Undergraduate Scholarship',
 		amount: '$1700/year',
 		period: '2022–Present',
-		description: 'National grant for excellence in sciences.',
+		description: 'Granted for excellence in natural sciences.',
 	},
 	{
 		name: 'Turkish Education Association Full Scholarship',
 		amount: 'Full Coverage',
 		period: '2014–Present',
-		description: 'Complete education coverage from secondary school through university.',
+		description: 'Full education support from middle school to university.',
 	},
 ];
