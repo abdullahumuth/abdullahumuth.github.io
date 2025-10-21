@@ -13,7 +13,7 @@ This project was conducted as a research internship at **Radboud University**, i
 ## Project Overview
 
 This research explored **multi-task symbolic regression** using **transformer architectures** to uncover interpretable physical relations in gravitational wave data.  
-The approach leveraged **contrastive learning** to evaluate the likelihood of observed $(x, y)$ data under candidate symbolic expressions, aiming to bridge the gap between deep learning and analytical modeling in gravitational wave physics.
+The approach leveraged **contrastive learning** to evaluate the likelihood of observed numerical data under candidate symbolic expressions using transformers.
 
 ---
 
@@ -21,7 +21,6 @@ The approach leveraged **contrastive learning** to evaluate the likelihood of ob
 
 - Design transformer-based models capable of discovering mathematical laws from noisy astrophysical data  
 - Integrate symbolic regression and contrastive learning for interpretable physical inference  
-- Evaluate model performance on simulated gravitational wave datasets from detectors such as **LIGO** and **Virgo**  
 - Advance methods for **AI-driven theory discovery** in high-energy physics  
 
 ---
