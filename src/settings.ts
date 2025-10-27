@@ -15,7 +15,7 @@ export const profile = {
 export const social = {
 	email: 'abdullahumuth@gmail.com',
 	linkedin: 'https://www.linkedin.com/in/abdullah-umut-hamzao%C4%9Fullar%C4%B1-17893b221',
-	x: 'https://x.com/abdullahumuth',
+	bluesky: 'https://bsky.app/profile/abdullahumuth.bsky.social',
 	github: 'https://github.com/abdullahumuth',
 	gitlab: '',
 	scholar: '',
