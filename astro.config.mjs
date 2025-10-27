@@ -13,4 +13,7 @@ export default defineConfig({
     integrations: [react(), tailwind(), sitemap()],
     site: template.website_url,
     base: template.base,
+    redirects: {
+    '/authornetwork': 'https://authornetwork.netlify.app/',
+  },
 });
