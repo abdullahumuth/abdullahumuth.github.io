@@ -20,6 +20,7 @@ export const social = {
 	gitlab: '',
 	scholar: '',
 	inspire: '',
+	x: '',
 	arxiv: 'https://arxiv.org/a/abdullahumuth.htm',
 }
 
