@@ -4,7 +4,7 @@ export const profile = {
 	institute: 'Boğaziçi University, Istanbul',
 	author_name: 'Abdullah Umut Hamzaoğulları', // Author name to be highlighted in the papers section
 	research_areas: [
-		{ title: 'AI for Scientific Discovery', description: 'Using machine learning to accelerate scientific progress, particularly in theoretical physics', field: 'physics' },
+		{ title: 'AI for Scientific Discovery', description: 'Physics foundation models, automating theory generation, interpretable physics models.', field: 'physics' },
 		{ title: 'Theoretical & Computational Physics', description: 'Foundations of physics, quantum algorithms, relativity', field: 'physics' },
 		{ title: 'Deep Learning & Symbolic AI', description: 'Transformer architectures, representation learning, and symbolic regression for interpretable models', field: 'cs' },
 		{ title: 'Physics-Informed Machine Learning', description: 'Incorporating physical laws and symmetries into neural network architectures', field: 'physics' },

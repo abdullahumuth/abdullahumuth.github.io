@@ -57,6 +57,17 @@ if (scholarships.length > 0) {
 	}
 
 	{
+		orderedPublications.length > 0 && (
+			<section class='mb-12'>
+				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
+					Publications
+				</h2>
+				<PublicationsList elements={orderedPublications}/>
+			</section>
+		)
+	}
+
+	{
 		orderedResearch.length > 0 && (
 			<section class='mb-12'>
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
@@ -96,17 +107,6 @@ if (scholarships.length > 0) {
 					Leadership & Teaching Experience
 				</h2>
 				<CvTimeline elements={orderedExtracurricular} colored={true} />
-			</section>
-		)
-	}
-
-	{
-		orderedPublications.length > 0 && (
-			<section class='mb-12'>
-				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
-					Publications
-				</h2>
-				<PublicationsList elements={orderedPublications}/>
 			</section>
 		)
 	}

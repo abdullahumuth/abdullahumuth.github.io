@@ -136,7 +136,18 @@ export const skills = [
 	},
 ];
 
-export const publications = [];
+export const publications = [
+	{
+		title: "Improving Lagrangian Neural Networks with Hessian Regularization",
+		authors: "A. U. Hamzaoğulları, A. Ozakin",
+		journal: "Preprint",
+		time: "December 2025",
+		link: "https://www.researchgate.net/publication/398232457_Improving_Lagrangian_Neural_Networks_with_Hessian_Regularization",
+		abstract: "We propose Hessian regularization and other improvements to address training instabilities in Lagrangian Neural Networks. Our approach enables learning complex systems like triple pendulums and extracting spacetime metrics from trajectory data in general relativistic settings.",
+		doi: "10.13140/RG.2.2.17459.90407",
+		license: "CC BY-NC-SA 4.0",
+	},
+];
 
 export const scholarships = [
 	{
